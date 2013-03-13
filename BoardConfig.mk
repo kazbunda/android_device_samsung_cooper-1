@@ -20,17 +20,17 @@
 include device/samsung/msm7x27-common/BoardConfigCommon.mk
 
 ## Kernel, bootloader
-TARGET_BOOTLOADER_BOARD_NAME := gio
+TARGET_BOOTLOADER_BOARD_NAME := cooper
 TARGET_KERNEL_CONFIG := cyanogenmod_cooper_defconfig
 
 ## Assert
-TARGET_OTA_ASSERT_DEVICE := gio,GT-S5660
+TARGET_OTA_ASSERT_DEVICE := cooper,GT-S5830
 
 ## Recovery
 BOARD_LDPI_RECOVERY := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/cooper/recovery/recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/gio/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/samsung/gio/recovery/recovery.rc
-TARGET_RECOVERY_FSTAB := device/samsung/gio/recovery/recovery.fstab
-TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/gio/recovery/recovery_kernel
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/cooper/recovery/graphics.c
+TARGET_RECOVERY_INITRC := device/samsung/cooper/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/samsung/cooper/recovery/recovery.fstab
+TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/cooper/recovery/recovery_kernel
